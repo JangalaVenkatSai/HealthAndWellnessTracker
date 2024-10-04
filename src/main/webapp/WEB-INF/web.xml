@@ -1,0 +1,47 @@
+<web-app>
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.healthwellness.controller.LoginController
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterController</servlet-name>
+		<servlet-class>com.healthwellness.controller.RegisterController
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BMICalculatorServlet</servlet-name>
+		<servlet-class>com.healthwellness.controller.BMICalculatorServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BMICalculatorServlet</servlet-name>
+		<url-pattern>/bmiCalculator</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ActivityTrackerServlet</servlet-name>
+		<servlet-class>com.healthwellness.controller.ActivityTrackerServlet
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ActivityTrackerServlet</servlet-name>
+		<url-pattern>/activityTracker</url-pattern>
+	</servlet-mapping>
+
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+</web-app>
